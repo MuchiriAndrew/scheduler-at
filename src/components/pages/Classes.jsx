@@ -5,14 +5,17 @@ import AddButton from '../AddButton'
 import "../../styles/Home.css"
 import '../../styles/addButton.css'
 
-function Home() {
+function Classes() {
 
-  const [divs, setDivs] = useState([<ClassAdder />])
+  const [divs2, setDivs2] = useState([])
+  const [divs, setDivs] = useState([<ClassAdder  divs2 = {divs2} setDivs2 = {setDivs2}/>])
+
   const HandleAddDiv = () => {
     const newDiv = (
-        <ClassAdder/>
+        <ClassAdder divs2 = {divs2} setDivs2 = {setDivs2}/>
     );
     setDivs(prevDivs => [...prevDivs, newDiv]);
+    console.log(divs2);
   };
 
   return (
@@ -27,4 +30,4 @@ function Home() {
   )
 }
 
-export default Home
+export default Classes

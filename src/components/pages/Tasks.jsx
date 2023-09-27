@@ -5,13 +5,15 @@ import "../../styles/Home.css"
 import '../../styles/addButton.css'
 
 function Tasks() {
-    const [tasks, setTasks] = useState([<TaskAdder/>]);
+    const [tasks2, setTasks2] = useState([]);
+    const [tasks, setTasks] = useState([<TaskAdder tasks2 = {tasks2} setTasks2 = {setTasks2}/>]);
 
     const HandleAddDiv = () => {
         const newDiv = (
-            <TaskAdder/>
+            <TaskAdder tasks2 = {tasks2} setTasks2 = {setTasks2}/>
         );
         setTasks(prevTasks => [...prevTasks, newDiv]);
+        console.log(tasks2);
       };
 
   return (
@@ -19,7 +21,7 @@ function Tasks() {
         <div className='py-5' id='wrapper1'>
             <h1>Task Adder</h1>
             <div>{tasks}</div>
-            <AddButton HandleAddDiv = {HandleAddDiv}/>
+            <AddButton HandleAddDiv={HandleAddDiv}/>
             <button className='btn btn-success' type='submit'>SUBMIT TASKS</button>
         </div>
     </>
