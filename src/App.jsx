@@ -1,14 +1,19 @@
 import './App.css'
 import TaskAdder from './components/TaskAdder'
 import Home from './components/pages/Home'
-// import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+import Tasks from './components/pages/Tasks'
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 
 
 function App() {
   return (
     <>
-    <Home />
-    <TaskAdder/>
+    <Router>
+      <Routes>
+        <Route path='/classes' element = {<Home/>}/>
+        <Route path='/tasks' element = {<Tasks/>}/>
+      </Routes>
+    </Router>
     </>
   )
 }

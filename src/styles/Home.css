@@ -1,6 +1,6 @@
 #wrapper1 {
-    min-height: max-content;
-    height: 100vh;
+    min-height: 100vh;
+    height: max-content;
     width: 100vw;
     display: flex;
     flex-direction: column;
