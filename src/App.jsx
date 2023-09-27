@@ -1,5 +1,4 @@
 import './App.css'
-import TaskAdder from './components/TaskAdder'
 import Classes from './components/pages/Classes'
 import ScheduleDisplay from './components/pages/ScheduleDisplay'
 import Tasks from './components/pages/Tasks'
@@ -13,7 +12,6 @@ function App() {
     <Router>
       <Routes>
         <Route path='/classes' element = {<Classes/>}/>
-
         <Route path='/tasks' element = {<Tasks/>}/>
         <Route path='/schedule' element = {<ScheduleDisplay/>}/>
       </Routes>
