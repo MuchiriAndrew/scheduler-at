@@ -44,7 +44,7 @@
 
   #status-container {
     width: 90%;
-    height: 300px;
+    height: fit-content;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
