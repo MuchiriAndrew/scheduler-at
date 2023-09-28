@@ -18,6 +18,9 @@ function Tasks() {
 
   return (
     <>
+    <a href='/' className='floating-back-btn m-3 mt-2'>
+          <i className='bi bi-arrow-left'></i>
+      </a>
         <div className='py-5' id='wrapper1'>
             <h1>Task Adder</h1>
             <div>{tasks}</div>
