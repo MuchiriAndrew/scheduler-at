@@ -11,7 +11,24 @@ function UserCredentials() {
    const handleSubmit = (e) => {
      e.preventDefault();
 
-     setUserData({...userData, name:name, number:phoneNumber})
+     setUserData({...userData, name:name, number:phoneNumber});
+
+     if (userData) {
+      console.log("USER", userData);
+      fetch(`http://localhost:3000/api/creds`, {
+        method: "POST",
+        body: JSON.stringify(userData),
+        headers: {
+          "Content-Type": "application/json",
+          // 'Content-Type': 'application/x-www-form-urlencoded',
+        }
+      }).then((res) => {
+        sessionStorage.setItem('target_phone', userData?.number);
+        console.log(res);
+      }).catch((err) => {
+        console.log(err);
+      })
+    }
    };
 
    useEffect(() => {

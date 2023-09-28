@@ -37,6 +37,30 @@ function Classes() {
     setData((prev) => ({...prev, schedule: divs2}))
     setData((prev) => ({...prev, tasks: tasks2}))
     console.log(data);
+
+    try {
+      const phone = sessionStorage.getItem("target_phone");
+
+      console.log({...data, phone});
+
+      console.log(data);
+
+      fetch(`http://localhost:3000/api/abc`, {
+        method: "POST",
+        body: JSON.stringify({...data, phone}),
+        headers: {
+          "Content-Type": "application/json",
+          // 'Content-Type': 'application/x-www-form-urlencoded',
+        },
+      }).then((res) => {
+        console.log(res);
+      }).catch((err) => {
+        console.log(err);
+      })
+
+    } catch(err) {
+      alert("Failed to retrieve phone number");
+    }
   }
 
 
