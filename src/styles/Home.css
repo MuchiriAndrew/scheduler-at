@@ -10,7 +10,7 @@
      width: 100%;
      height: 100vh;
      margin: 0;
-     background: linear-gradient(to left, rgb(179, 255, 217),rgb(168, 247, 168));
+     background: linear-gradient(to left, rgb(237, 253, 255),rgb(210, 253, 210));
 }
 
 header {
@@ -34,6 +34,13 @@ header > .col {
     align-items: center;
     justify-content: center;
 }
+.logo {
+    width: 100%;
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: 10% 90%;
+}
+
 .header-container div.content{
     height: 90%;
     width: 35%;
@@ -44,4 +51,20 @@ header > .col {
     text-align: center;
     display: grid;
     grid-template-rows: 70% 30%;
+}
+
+.image-container {
+    background-color: azure;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-container img {
+    width: 90%;
+    border-radius: 10px;
+    background: yellowgreen;
+    height: 40vh;
+    border: 1px solid blue;
 }

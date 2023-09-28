@@ -5,11 +5,13 @@ function Homepage() {
       return(
             <div className='homepage m-0'>
             <header className='row m-0'>
-                  <div className='col row'>
-                        <i className='bi bi-code m2 col'></i>
-                        <div className='col'>
-                              <span className='row'>Schecduler</span>
-                              <span className='row'>Timeline</span>
+                  <div className='col'>
+                        <div className='logo'>
+                              <i className='bi bi-code m2'></i>
+                              <div className='col'>
+                                    <span className='row'>Schecduler</span>
+                                    <span className='row'>Timeline</span>
+                              </div>
                         </div>
                   </div>
                   <nav className='col'>
@@ -32,7 +34,7 @@ function Homepage() {
                               </div>
                         </div>
                         <div className='image-container'>
-                              
+                              <img src="/" alt="dashboard image" />
                         </div>
                   </div>
             </main>
