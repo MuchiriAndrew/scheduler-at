@@ -20,7 +20,7 @@ const ScheduleDisplay = () => {
       label: 'My First Dataset',
       data: [300, 50],
       backgroundColor: [
-        'rgb(255, 99, 132)',
+        'rgb(255, 0, 0)',
         'rgb(54, 162, 235)',
       ],
       hoverOffset: 4
