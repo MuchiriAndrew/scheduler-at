@@ -15,6 +15,7 @@ function ClassAdder({divs2, setDivs2}) {
   const handleAddTask = () => {
     if (fromInput && toInput && classInput) {
       setDivs2([...divs2, { from: fromInput, to: toInput, class: classInput }]);
+      // setData([...data, { from: fromInput, to: toInput, class: classInput }])
       // setTaskInput('');
       // setSelectedPriority('');
       setContent('Added!!')

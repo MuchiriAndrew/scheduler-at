@@ -12,7 +12,7 @@ function App() {
     <Router>
       <Routes>
         <Route path='/classes' element = {<Classes/>}/>
-        <Route path='/tasks' element = {<Tasks/>}/>
+        {/* <Route path='/tasks' element = {<Tasks/>}/> */}
         <Route path='/schedule' element = {<ScheduleDisplay/>}/>
       </Routes>
     </Router>

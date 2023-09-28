@@ -13,7 +13,8 @@ const TaskAdder = ({tasks2, setTasks2}) => {
 
   const handleAddTask = () => {
     if (taskInput && selectedPriority) {
-      setTasks2([...tasks2, { task: taskInput, priority: selectedPriority }]);
+      setTasks2([...tasks2, { task: taskInput, priority: selectedPriority }]); //
+      // setData([...data, { task: taskInput, priority: selectedPriority }]);
       // setTaskInput('');
       // setSelectedPriority('');
       setContent('Added!!')
@@ -27,7 +28,7 @@ const TaskAdder = ({tasks2, setTasks2}) => {
 
         <div id='inputs'>
         <label htmlFor="task" className='px-2'>TASK</label>
-        <textarea
+        <input
           name="task"
           id="task"
           cols="30"

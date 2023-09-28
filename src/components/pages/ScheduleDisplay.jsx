@@ -1,10 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import '../../styles/ScheduleDisplay.css'
 
 const ScheduleDisplay = () => {
 
-  const hours = Array.from({ length: 20 }, (_, index) => index + 6);
+  const hours = Array.from({ length: 5 }, (_, index) => index + 6);
 
   return (
     <div id='wrapper2'>
