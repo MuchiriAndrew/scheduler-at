@@ -1,12 +1,13 @@
 #new-task{
-    width: 80vw;
-    min-height: 150px;
+    width: 600px;
+    min-height: 100px;
     height: max-content;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
     background: hsl(239, 57%, 85%);
+    padding: 20px;
 }
 
 #inputs {
