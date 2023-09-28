@@ -1,8 +1,8 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import AddButton from '../AddButton'
 import TaskAdder from '../TaskAdder'
 import "../../styles/Home.css"
-import '../../styles/addButton.css'
+import '../../styles/addButton.css';
 
 function Tasks() {
     const [tasks2, setTasks2] = useState([]);
@@ -13,8 +13,9 @@ function Tasks() {
             <TaskAdder tasks2 = {tasks2} setTasks2 = {setTasks2}/>
         );
         setTasks(prevTasks => [...prevTasks, newDiv]);
-        console.log(tasks2);
       };
+
+      useEffect(() => {console.log(tasks2)}, [tasks2])
 
   return (
     <>

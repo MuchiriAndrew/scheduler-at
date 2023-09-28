@@ -1,9 +1,8 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import '../styles/taskAdder.css'
 
 const TaskAdder = ({tasks2, setTasks2}) => {
 
-  // const [tasks, setTasks] = useState([]);
   const [taskInput, setTaskInput] = useState('');
   const [selectedPriority, setSelectedPriority] = useState('');
   const [content, setContent] = useState('Add Task')
@@ -20,6 +19,7 @@ const TaskAdder = ({tasks2, setTasks2}) => {
       setContent('Added!!')
     }
   };
+
 
   return (
     <>
