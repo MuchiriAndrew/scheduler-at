@@ -22,7 +22,7 @@ function App() {
     <Router>
       <Routes>
         <Route path='/classes' element = {<Classes/>}/>
-        {/* <Route path='/tasks' element = {<Tasks/>}/> */}
+        <Route path='/' element = {<Homepage/>}/>
         <Route path='/schedule' element = {<ScheduleDisplay/>}/>
       </Routes>
     </Router>
