@@ -78,6 +78,7 @@ const ScheduleDisplay = () => {
     </div>
 
     </div>
+    </div>
 
 
 
