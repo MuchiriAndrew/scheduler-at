@@ -1,9 +1,8 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import '../styles/taskAdder.css'
 
 const TaskAdder = ({tasks2, setTasks2}) => {
 
-  // const [tasks, setTasks] = useState([]);
   const [taskInput, setTaskInput] = useState('');
   const [selectedPriority, setSelectedPriority] = useState('');
   const [content, setContent] = useState('Add Task')
@@ -14,12 +13,14 @@ const TaskAdder = ({tasks2, setTasks2}) => {
 
   const handleAddTask = () => {
     if (taskInput && selectedPriority) {
-      setTasks2([...tasks2, { task: taskInput, priority: selectedPriority }]);
+      setTasks2([...tasks2, { task: taskInput, priority: selectedPriority }]); //
+      // setData([...data, { task: taskInput, priority: selectedPriority }]);
       // setTaskInput('');
       // setSelectedPriority('');
       setContent('Added!!')
     }
   };
+
 
   return (
     <>
@@ -27,7 +28,7 @@ const TaskAdder = ({tasks2, setTasks2}) => {
 
         <div id='inputs'>
         <label htmlFor="task" className='px-2'>TASK</label>
-        <textarea
+        <input
           name="task"
           id="task"
           cols="30"
@@ -55,7 +56,7 @@ const TaskAdder = ({tasks2, setTasks2}) => {
         </div>
 
         <div id='button'>
-        <button className='btn btn-primary' onClick={handleAddTask}>{content}</button>
+        <button id='addtaskbutton' className='rounded-pill btn btn-primary' onClick={handleAddTask}>{content}</button>
         </div>
       </div>
 

@@ -1,10 +1,49 @@
-#wrapper1 {
-    min-height: 100vh;
+#container-wrapper {
     height: max-content;
+    min-height: 90vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+}
+
+
+#grish {
+    height: max-content;
+    min-height: 90vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+}
+
+#submit {
+    width: 100px;
+}
+
+#container-wrapper  > #grish > #wrapper1 {
+    min-height: 90vh;
+    height: max-content;
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#container-wrapper > #grish > #wrapper2 {
+    min-height: 90vh;
+    height: max-content;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#container-wrapper > #grish> #wrapper1 h1 {
+    font-family: Poppins;
+}
+#container-wrapper  > #grish > #wrapper2 h1 {
+    font-family: Poppins;
 }
 
 .homepage {

@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import "../styles/ClassAdder.css"
+import "../styles/classAdder.css";
 
 function ClassAdder({divs2, setDivs2}) {
 
@@ -15,6 +15,7 @@ function ClassAdder({divs2, setDivs2}) {
   const handleAddTask = () => {
     if (fromInput && toInput && classInput) {
       setDivs2([...divs2, { from: fromInput, to: toInput, class: classInput }]);
+      // setData([...data, { from: fromInput, to: toInput, class: classInput }])
       // setTaskInput('');
       // setSelectedPriority('');
       setContent('Added!!')
@@ -42,7 +43,7 @@ function ClassAdder({divs2, setDivs2}) {
             </div>
 
             <div id='button'>
-            <button className='btn btn-primary' onClick={handleAddTask}>{content}</button>
+            <button id='addclassbtn' className='rounded-pill btn btn-primary' onClick={handleAddTask}>{content}</button>
             </div>
 
             </div>
