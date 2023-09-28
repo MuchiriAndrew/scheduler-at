@@ -1,6 +1,6 @@
 #container {
-    width: 80vw;
-    min-height: 150px;
+    width: 600px;
+    min-height: 100px;
     height: max-content;
     display: flex;
     justify-content: center;
@@ -21,6 +21,15 @@
     justify-content: center;
     align-items: center;
     width: 33.33%;
+}
+
+#from input {
+    font-size: 12px;
+    font-family: Poppins;
+}
+#to input {
+    font-size: 12px;
+    font-family: Poppins;
 }
 
 #to {
@@ -53,4 +62,10 @@
     width: 70%;
     border: none;
     height: 40px;
+}
+
+#addclassbtn {
+    font-family: Poppins;
+    font-size: 10px;
+    margin-top: 20px;
 }
