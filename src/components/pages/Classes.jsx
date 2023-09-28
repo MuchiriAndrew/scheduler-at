@@ -54,6 +54,7 @@ function Classes() {
         },
       }).then((res) => {
         console.log(res);
+        location.href = "/"; 
       }).catch((err) => {
         console.log(err);
       })
