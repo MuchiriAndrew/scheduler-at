@@ -22,11 +22,11 @@ const ScheduleDisplay = () => {
 
 
       <div id='status-container' className='mt-5'>
-        <div className='bg-warning rounded-3' id='graph'>
+        <div className='rounded-3' id='graph'>
           <h2>Live Status</h2>
         </div>
 
-        <div className='bg-primary rounded-3' id='calender'>
+        <div className='rounded-3' id='calender'>
           <h2>Calender</h2>
         </div>
 
