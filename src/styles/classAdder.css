@@ -23,6 +23,15 @@
     width: 33.33%;
 }
 
+#from input {
+    font-size: 12px;
+    font-family: Poppins;
+}
+#to input {
+    font-size: 12px;
+    font-family: Poppins;
+}
+
 #to {
     display: flex;
     flex-direction: column;
@@ -53,4 +62,10 @@
     width: 70%;
     border: none;
     height: 40px;
+}
+
+#addclassbtn {
+    font-family: Poppins;
+    font-size: 10px;
+    margin-top: 20px;
 }

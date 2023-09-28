@@ -8,7 +8,7 @@ import '../../styles/addButton.css'
 
 function Classes() {
 
-  const [data, setData] = useState([])
+  const [data, setData] = useState({})
   const [divs2, setDivs2] = useState([])
   const [divs, setDivs] = useState([<ClassAdder  divs2 = {divs2} setDivs2 = {setDivs2}  />])
   const [tasks2, setTasks2] = useState([]);
@@ -34,8 +34,8 @@ function Classes() {
   }, [data])
 
   const handleData = () => {
-    setData(data.push(divs2))
-    setData(data.push(tasks2))
+    setData((prev) => ({...prev, schedule: divs2}))
+    setData((prev) => ({...prev, tasks: tasks2}))
     console.log(data);
   }
 
@@ -43,7 +43,9 @@ function Classes() {
   return (
     <>
     <div id='container-wrapper'>
-        <div className='' id='wrapper1'>
+
+      <div id='grish'>
+      <div className='' id='wrapper1'>
             <h1>Class Adder</h1>
             <div>{divs}</div>
             <AddButton HandleAddDiv = {HandleAddClassDiv}/>
@@ -51,16 +53,21 @@ function Classes() {
         </div>
 
 
-        <div className='bg-primary ' id='wrapper2'>
+        <div id='wrapper2'>
             <h1>Task Adder</h1>
             <div>{tasks}</div>
             <AddButton HandleAddDiv={HandleAddTaskDiv}/>
             {/* <button className='btn btn-success' type='submit'>SUBMIT TASKS</button> */}
         </div>
 
+      </div>
+
+
+      <button onClick={handleData} id='submit' className='m-0 rounded-pill btn btn-success'>SUBMIT</button>
+
     </div>
 
-    <button onClick={handleData} className='btn btn-success'>SUBMIT</button>
+
     </>
   )
 }

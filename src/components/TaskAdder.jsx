@@ -56,7 +56,7 @@ const TaskAdder = ({tasks2, setTasks2}) => {
         </div>
 
         <div id='button'>
-        <button className='btn btn-primary' onClick={handleAddTask}>{content}</button>
+        <button id='addtaskbutton' className='rounded-pill btn btn-primary' onClick={handleAddTask}>{content}</button>
         </div>
       </div>
 

@@ -41,3 +41,8 @@ input, textarea, select{
     padding: 10px;
     cursor: pointer;
 }
+
+#addtaskbutton {
+    font-family: Poppins;
+    font-size: 10px;
+}

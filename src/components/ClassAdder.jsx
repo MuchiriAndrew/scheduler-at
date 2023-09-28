@@ -43,7 +43,7 @@ function ClassAdder({divs2, setDivs2}) {
             </div>
 
             <div id='button'>
-            <button className='btn btn-primary' onClick={handleAddTask}>{content}</button>
+            <button id='addclassbtn' className='rounded-pill btn btn-primary' onClick={handleAddTask}>{content}</button>
             </div>
 
             </div>
