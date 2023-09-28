@@ -1,18 +1,22 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import '../../styles/userCredentials.css'
 
 function UserCredentials() {
    // Define state variables for name and phone number
+   const[userData, setUserData] = useState({});
    const [name, setName] = useState('');
    const [phoneNumber, setPhoneNumber] = useState('');
 
    // Function to handle form submission
    const handleSubmit = (e) => {
      e.preventDefault();
-     // You can do something with the form data here, like sending it to an API
-     console.log('Name:', name);
-     console.log('Phone Number:', phoneNumber);
+
+     setUserData({...userData, name:name, number:phoneNumber})
    };
+
+   useEffect(() => {
+    console.log('userData',userData);
+   },[userData])
 
    return (
     <div>
@@ -45,7 +49,7 @@ function UserCredentials() {
         />
       </div>
       <div className="form-group">
-        <button className="submit-button" type="submit">
+        <button  className="submit-button" type="submit">
           Submit
         </button>
       </div>
