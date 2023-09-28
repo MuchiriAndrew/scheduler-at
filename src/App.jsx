@@ -19,14 +19,13 @@ function App() {
 
   return (
     <>
-      <Router>
-        <Routes>
-            <Route path='/' element = {<Homepage/>} ></Route>
-            <Route path='/classes' element = {<Classes/>}/>
-            <Route path='/tasks' element = {<Tasks/>}/>
-            <Route path='/schedule' element = {<ScheduleDisplay/>}/>
-        </Routes>
-      </Router>
+    <Router>
+      <Routes>
+        <Route path='/classes' element = {<Classes/>}/>
+        {/* <Route path='/tasks' element = {<Tasks/>}/> */}
+        <Route path='/schedule' element = {<ScheduleDisplay/>}/>
+      </Routes>
+    </Router>
     </>
   )
 }
