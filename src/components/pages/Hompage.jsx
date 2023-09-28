@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 function Homepage() {
-      
+
       useEffect(() => {
       const handleScroll = () => {
             const header = document.getElementsByTagName('header')[0]; // Select the first <header> element
@@ -25,7 +25,7 @@ function Homepage() {
                   <div className='col'>
                         <div className='logo'>
                               <div>
-                                    <img type='icon' src="/public/dash_icon.svg" alt="dash icon" />
+                                    <img type='icon' src="/dash_icon.svg" alt="dash icon" />
                               </div>
                               <div className=''>
                                     <span className='h6 text-warning'>Scheduler</span><br />
@@ -56,7 +56,7 @@ function Homepage() {
                               </div>
                         </div>
                         <div className='image-container'>
-                              <img src="/public/dash_pic.jpg" alt="dashboard image" />
+                              <img src="/dash_pic.jpg" alt="dashboard image" />
                         </div>
                   </div>
                   <div className='features'>
