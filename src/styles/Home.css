@@ -22,3 +22,51 @@
     flex-direction: column;
     align-items: center;
 }
+
+#container-wrapper > #wrapper2 {
+    min-height: 100vh;
+    height: max-content;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.homepage {
+     width: 100%;
+     height: 100vh;
+     margin: 0;
+     background: linear-gradient(to left, rgb(179, 255, 217),rgb(168, 247, 168));
+}
+
+header {
+    width: 100%;
+    min-height: 10vh;
+    margin: 0;
+}
+
+header > .col {
+        margin: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+}
+
+.header-container {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-container div.content{
+    height: 90%;
+    width: 35%;
+    background-color: rgba(255, 255, 255, 0.123);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.082);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    text-align: center;
+    display: grid;
+    grid-template-rows: 70% 30%;
+}
