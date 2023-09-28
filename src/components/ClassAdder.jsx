@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import "../styles/ClassAdder.css"
+import "../styles/classAdder.css";
 
 function ClassAdder({divs2, setDivs2}) {
 
