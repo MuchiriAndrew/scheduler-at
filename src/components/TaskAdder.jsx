@@ -24,6 +24,7 @@ const TaskAdder = ({tasks2, setTasks2}) => {
 
   return (
     <>
+
       <div className='rounded-3 mb-5' id='new-task'>
 
         <div id='inputs'>

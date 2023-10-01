@@ -41,7 +41,7 @@ function Homepage() {
                   </nav>
                   <div className='col'>
                         <div className=' button-div'>
-                                <a href='/credetials' className='btns btn-login'>Create</a>
+                                <a href='/credentials' className='btns btn-login'>Create</a>
                                 <a href='/schedule' className='btns btn-view'>View</a>
                         </div>
                       
@@ -85,25 +85,25 @@ function Homepage() {
                               <div className="col-md-4">
                                     <h5>Contacts</h5>
                                     <ul className="list-unstyled">
-                                          <li><a href="#">Email</a></li>
-                                          <li><a href="#">Phone</a></li>
-                                          <li><a href="#">Address</a></li>
+                                          <li><a style={{textDecoration:"none", color:"orange"}} href="#">Email</a></li>
+                                          <li><a style={{textDecoration:"none", color:"orange"}} href="#">Phone</a></li>
+                                          <li><a style={{textDecoration:"none", color:"orange"}} href="#">Address</a></li>
                                     </ul>
                               </div>
                               <div className="col-md-4">
                                     <h5>Page Links</h5>
                                     <ul className="list-unstyled">
-                                          <li><a href="#">Home</a></li>
-                                          <li><a href="#">About Us</a></li>
-                                          <li><a href="#">Services</a></li>
+                                          <li><a style={{textDecoration:"none", color:"orange"}} href="#">Home</a></li>
+                                          <li><a style={{textDecoration:"none", color:"orange"}} href="#">About Us</a></li>
+                                          <li><a style={{textDecoration:"none", color:"orange"}} href="#">Services</a></li>
                                     </ul>
                               </div>
                               <div className="col-md-4">
                                     <h5>Terms</h5>
                                     <ul className="list-unstyled">
-                                          <li><a href="#">Privacy Policy</a></li>
-                                          <li><a href="#">Terms of Use</a></li>
-                                          <li><a href="#">Cookie Policy</a></li>
+                                          <li><a style={{textDecoration:"none", color:"orange"}} href="#">Privacy Policy</a></li>
+                                          <li><a style={{textDecoration:"none", color:"orange"}} href="#">Terms of Use</a></li>
+                                          <li><a style={{textDecoration:"none", color:"orange"}} href="#">Cookie Policy</a></li>
                                     </ul>
                               </div>
                         </div>
