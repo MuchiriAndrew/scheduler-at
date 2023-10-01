@@ -67,34 +67,39 @@ function Classes() {
 
   return (
     <>
-    <div id='container-wrapper'>
 
-      <div id='grish'>
-      <div className='' id='wrapper1'>
-            <h1>Class Adder</h1>
-            <div>{divs}</div>
-            <AddButton HandleAddDiv = {HandleAddClassDiv}/>
-            {/* <button className='btn btn-success' type='submit'>SUBMIT CLASSES</button> */}
+
+
+        <div className='py-5' id='wrapper1'>
+      <div id='container-wrapper'>
+
+        <div id='grish'>
+        <div className='' id='wrapper1'>
+              <h1>Class Adder</h1>
+              <div>{divs}</div>
+              <AddButton HandleAddDiv = {HandleAddClassDiv}/>
+              {/* <button className='btn btn-success' type='submit'>SUBMIT CLASSES</button> */}
         </div>
 
 
-        <div id='wrapper2'>
-            <h1>Task Adder</h1>
-            <div>{tasks}</div>
-            <AddButton HandleAddDiv={HandleAddTaskDiv}/>
-            {/* <button className='btn btn-success' type='submit'>SUBMIT TASKS</button> */}
+          <div id='wrapper2'>
+              <h1>Task Adder</h1>
+              <div>{tasks}</div>
+              <AddButton HandleAddDiv={HandleAddTaskDiv}/>
+              {/* <button className='btn btn-success' type='submit'>SUBMIT TASKS</button> */}
+          </div>
+
         </div>
 
+
+        <button onClick={handleData} id='submit' className='m-0 rounded-pill btn btn-success'>SUBMIT</button>
+
+      </div>
       </div>
 
 
-      <button onClick={handleData} id='submit' className='m-0 rounded-pill btn btn-success'>SUBMIT</button>
-
-    </div>
-
-
     </>
-  )
+  );
 }
 
 export default Classes

@@ -11,20 +11,24 @@ function UserCredentials() {
    const handleSubmit = (e) => {
      e.preventDefault();
 
-     setUserData({...userData, name:name, number:phoneNumber});
+    //  setUserData({...userData, name:name, number:phoneNumber});
 
      if (userData) {
-      console.log("USER", userData);
+      // console.log("USER", userData);
       fetch(`http://localhost:3000/api/creds`, {
         method: "POST",
-        body: JSON.stringify(userData),
+        body: JSON.stringify({number: phoneNumber}),
         headers: {
           "Content-Type": "application/json",
           // 'Content-Type': 'application/x-www-form-urlencoded',
         }
       }).then((res) => {
-        sessionStorage.setItem('target_phone', userData?.number);
         console.log(res);
+        sessionStorage.setItem('target_phone', phoneNumber);
+
+        if (!sessionStorage.getItem("target_phone")) {
+          alert("Phone number not saved. Please try");
+        }
       }).catch((err) => {
         console.log(err);
       })
@@ -37,6 +41,9 @@ function UserCredentials() {
 
    return (
     <div>
+      <a href='/' className='floating-back-btn m-3 mt-2'>
+          <i className='bi bi-arrow-left'></i>
+      </a>
     <h2>Input Details</h2>
     <form className="form-container" onSubmit={handleSubmit}>
       <div className="form-group">

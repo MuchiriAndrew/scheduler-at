@@ -30,6 +30,12 @@ const ScheduleDisplay = () => {
   function onCalendarChange() {}
 
   return (
+
+    <div className='bg-blue'>
+      <a href='/' className='floating-back-btn m-3 mt-2'>
+          <i className='bi bi-arrow-left'></i>
+      </a>
+      <h1>Schedule Display</h1>
     <div id='wrapper2'>
 
       <div id='header'>
@@ -71,6 +77,7 @@ const ScheduleDisplay = () => {
       ))}
     </div>
 
+    </div>
     </div>
 
 

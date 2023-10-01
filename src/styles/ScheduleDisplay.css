@@ -8,6 +8,10 @@
     align-items: center;
 }
 
+.bg-blue h1{
+  text-align: center;
+}
+
 #header {
     background: aliceblue;
     width: 100%;
